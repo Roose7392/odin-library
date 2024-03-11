@@ -13,15 +13,15 @@
         <form>
           <div>
             <label for="title">Title</label>
-            <input type="text" id="title">
+            <input type="text" id="title" required>
           </div>
           <div>
             <label for="author">Author</label>
-            <input type="text" id="author">
+            <input type="text" id="author" required>
           </div>
           <div>
             <label for="pages">Pages</label>
-            <input type="number" id="pages">
+            <input type="number" id="pages" required>
           </div>
           <div class="read-input">
             <label for="read">I have read it</label>
@@ -29,7 +29,7 @@
           </div>
           <div class="form-buttons">
             <button type="submit">Add Book</button>
-        <button type='button'>Close</button>
+        <button type='button' id="close-button">Close</button>
           </div>
         </form>
       </dialog>
@@ -47,6 +47,7 @@
           <div class="bookshelf">
             <div class="book">
               <p class="book-name">Moby Dick</p>
+              <button>Mark as read</button>
               <p class="book-author">Herman Melville</p>
             </div>
           </div>

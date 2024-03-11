@@ -163,3 +163,19 @@ button[type="submit"] {
 dialog::backdrop {
   background-color: rgba(0,0,0, 0.6);
 }
+
+input:invalid {
+  border-color: orange;
+}
+
+input:valid {
+  border-color: green;
+}
+
+.hidden {
+  display: none;
+}
+
+.book:hover .hidden {
+  display: block;
+}
