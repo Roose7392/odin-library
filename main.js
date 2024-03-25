@@ -13,16 +13,17 @@ const readInput = document.querySelector('input[id="read"]');
 const COLORS = ['orangered', 'green', 'gray', 'rosybrown', 'hotpink', 'goldenrod', 'tan', 'thistle']
 let myLibrary = [];
 
-function Book(title, author, pages, read) {
-  this.title = title;
-  this.author = author;
-  this.pages = pages;
-  this.read = Boolean(read);
-  this.id = crypto.randomUUID()
-}
+class Book {
+  constructor(title, author, pages, read) {
+    this.title = title;
+    this.author = author;
+    this.pages = pages;
+    this.read = Boolean(read);
+  }
 
-Book.prototype.toggleId = function() {
-  this.read = !this.read
+  toggleId() {
+    this.read = !this.read
+  }
 }
 
 function addBookToLibrary(book) {
